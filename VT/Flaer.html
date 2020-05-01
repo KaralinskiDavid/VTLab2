@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="FirstPg.css">
+    <link rel="stylesheet" href="Feedback.css">
+    <link rel="stylesheet" href="Buklet.css">
+    <link rel="stylesheet" href="Flaer.css">
+    <meta charset="utf-8">
+    <title>Попытка начать что-то делать</title>
+</head>
+<body>
+<header class="site-header">
+    <h1><a href="FirstPage.html"><img id="logo" src="files/images/khuy.png"></a></h1>
+    <nav id="main-menu">
+        <ul>
+            <li><a href="AboutUs.html">О нас</a></li>
+            <li><a href="">Контакты</a></li>
+            <li><a href="Feedback.html">Оставить отзыв</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="mycolomns">
+        <section class="col_mai">
+            <div class="infotext">
+                <h1>Немного о флаерах</h1>
+                <p>
+                    Мы печатаем односторонние и двухсторонние флаеры, на матовой и глянцевой бумаге.<br>
+                    После печати продукция режется в размер, а также при необходимости возможна фальцовка, биговка или перфорация.<br>
+                    Если у Вас нет готового макета, наши сотрудники сделают дизайн профессионально.
+                </p>
+                <p>
+                    Заказывайте печать флаеров в компании «Типография PIX» по отличной цене! Стоимость печати зависит<br>
+                    от тиража и формата, самые дешевые стандартные размеры — А5, А6 и 100х210 мм.
+                </p>
+                <p>
+                    Мы выполним печать флаеров любого вида в соответствии с Вашими интересами, быстро и дешево!<br>
+                    Возможна доставка продукции в любую точку Минска!
+                </p>
+                <p>
+                    Обращайтесь к нам за лучшим результатом!
+                </p>
+            </div>
+            <div id="formcontainer">
+                <form id="feedbackform" method="post" enctype="application/x-www-form-urlencoded" action="">
+                    <p>
+                        <label>Ваш адрес электронной почты
+                            <input type="email" name="eMail" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Тип бумаги
+                            <select name="papertype" >
+                                <option value="">Глянцевая бумага</option>
+                                <option value="">Мелованная бумага</option>
+                                <option value="">Матовая бумага</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Размер
+                            <select name="size" >
+                                <option value="A5">А5</option>
+                                <option value="A6">А6</option>
+                                <option value="100x120mm">100x120mm</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label id="uploadimg">Нажмите, чтобы загрузить изображение для печати
+                            <input id="usrimg" type="file" name="userimage" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Комментарий к заказу
+                            <textarea name="feedbacktext"></textarea>
+                        </label>
+                    </p>
+                    <p>
+                        <button id="submitbut">Заказать</button>
+                    </p>
+                </form>
+            </div>
+        </section>
+        <aside class="col_sidebar">
+            <div class="container-form">
+                <form type="get" action="">
+                    <input type="text" id="serchform" name="search" placeholder="Поиск">
+                    <button id="submitsbut">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="categorycontainer">
+                <ul class="category">
+                    <li><a href="Buklet.html">Буклеты</a></li>
+                    <li><a href="Flaer.html">Флаеры</a></li>
+                    <li><a href="Vizitka.html">Визитки</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</main>
+<footer id="footer-site">
+    <ul class="soc">
+        <li><a href="" class="fa fa-vk"></a></li>
+        <li><a href="" class="fa fa-facebook"></a></li>
+        <li><a href="" class="fa fa-mail-forward"></a></li>
+    </ul>
+    <div>
+        <span>&copy; Давид Каролинсий 2020</span>
+    </div>
+</footer>
+</body>
+</html>

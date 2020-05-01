@@ -1,0 +1,48 @@
+.aboutcompany{
+    max-width: 56.2rem;
+    margin-left: 18rem;
+    box-sizing:border-box;
+    margin-top: 7rem;
+    position: relative;
+    padding-bottom: 14rem;
+    background-image: url(files/images/zalupa.jpg);
+    background-size:90%;
+    background-position-x: right;
+    background-position-y: 20%;
+    background-repeat:no-repeat;
+}
+
+
+.aboutcompanytext p{
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 2.556rem;
+    margin-bottom: 2rem;
+}
+
+#infoback{
+    position: absolute;
+    bottom: 0;
+    left: 580px;
+    top:60px;
+    z-index: -1;
+    width: 100%;
+    max-width:100%;
+    border-style:none;
+    margin:2px;
+}
+
+@media screen and (max-width:800px){
+    .aboutcompany{
+        font-size:75%;
+        margin-left:3rem;
+        margin-top:4rem;
+        background-position-y:5%;
+    }
+
+    .aboutcompanytext p{
+        font-size:1rem;
+        margin-bottom:1rem;
+    }
+}
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="FirstPg.css">
+    <link rel="stylesheet" href="Feedback.css">
+    <link rel="stylesheet" href="Buklet.css">
+    <link rel="stylesheet" href="Vizitka.css">
+    <meta charset="utf-8">
+    <title>Попытка начать что-то делать</title>
+</head>
+<body>
+<header class="site-header">
+    <h1><a href="FirstPage.html"><img id="logo" src="files/images/khuy.png"></a></h1>
+    <nav id="main-menu">
+        <ul>
+            <li><a href="AboutUs.html">О нас</a></li>
+            <li><a href="">Контакты</a></li>
+            <li><a href="Feedback.html">Оставить отзыв</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="mycolomns">
+        <section class="col_mai">
+            <div class="infotext">
+                <h1>Немного о визитках</h1>
+                <p>
+                    В типографии PIX можно заказать визитки недорого, учитывая скидки и акции компании.<br>
+                    Мы печатаем визитки на плотной бумаге, изготовленной в Германии. Для получения продукции высокого<br>
+                    качества используется профессиональное цифровое оборудование — печатная машина Konica Minolta<br>
+                    bizhub PRESS C1070.  Доступна печать визиток на дизайнерской бумаге, на крафт бумаге и других оригинальных поверхностях.
+                </p>
+                <p>
+                    Срок изготовления — от одного дня, если продукция не отличается сложным макетом.
+                </p>
+                <p>
+                    Обращаем ваше внимание, что у каждого из Клиентов есть возможность заказать визитки по акции.<br>
+                    Сегодня дешево обойдется печать двухсторонних офсетных визиток по цене односторонних.<br>
+                    Бесплатно осуществляется ламинация лицевой стороны продукции. Срок изготовления — 7 рабочих дней.
+                </p>
+            </div>
+            <div id="formcontainer">
+                <form id="feedbackform" method="post" enctype="application/x-www-form-urlencoded" action="">
+                    <p>
+                        <label>Ваш адрес электронной почты
+                            <input type="email" name="eMail" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Тип бумаги
+                            <select name="papertype" >
+                                <option value="">Глянцевая бумага</option>
+                                <option value="">Мелованная бумага</option>
+                                <option value="">Матовая бумага</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Размер
+                            <select name="size" >
+                                <option value="A3">А3</option>
+                                <option value="A4">А4</option>
+                                <option value="A5">А5</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label id="uploadimg">Нажмите, чтобы загрузить изображение для печати
+                            <input id="usrimg" type="file" name="userimage" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Комментарий к заказу
+                            <textarea name="feedbacktext"></textarea>
+                        </label>
+                    </p>
+                    <p>
+                        <button id="submitbut">Заказать</button>
+                    </p>
+                </form>
+            </div>
+        </section>
+        <aside class="col_sidebar">
+            <div class="container-form">
+                <form type="get" action="">
+                    <input type="text" id="serchform" name="search" placeholder="Поиск">
+                    <button id="submitsbut">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="categorycontainer">
+                <ul class="category">
+                    <li><a href="Buklet.html">Буклеты</a></li>
+                    <li><a href="Flaer.html">Флаеры</a></li>
+                    <li><a href="Vizitka.html">Визитки</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</main>
+<footer id="footer-site">
+    <ul class="soc">
+        <li><a href="" class="fa fa-vk"></a></li>
+        <li><a href="" class="fa fa-facebook"></a></li>
+        <li><a href="" class="fa fa-mail-forward"></a></li>
+    </ul>
+    <div>
+        <span>&copy; Давид Каролинсий 2020</span>
+    </div>
+</footer>
+</body>
+</html>

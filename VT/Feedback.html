@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="FirstPg.css">
+    <link rel="stylesheet" href="Feedback.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header class="site-header">
+        <h1><a href="FirstPage.html"><img id="logo" src="files/images/khuy.png"></a></h1>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="AboutUs.html">О нас</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="Feedback.html">Оставить отзыв</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="mycolomns">
+            <section class="col_mai">
+                <h1>Ваше мнение о предоставленных услугах</h1>
+                <div id="feedbacktext">
+                    <p>
+                        Мы ценим каждого клиента, и нам<br> очень важно ваше мнение о нас
+                    </p>
+                    <p>
+                        Оцените нашу работу и мы устраним недостатки,<br> а достоинства сделаем еще более явными!
+                    </p>
+                    <p>
+                        Ваша любимая типография PIX.
+                    </p>
+                </div>
+                <div id="formcontainer">
+                    <form id="feedbackform" method="post" enctype="application/x-www-form-urlencoded" action="">
+                        <p>
+                            <label>Номер вашего заказа
+                                <input type="number" name="OrderNum" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label>Ваш адрес электронной почты
+                                <input type="email" name="eMail" required>
+                            </label>
+                        </p>
+                        <fieldset>
+                            <legend>Оцените качество товара</legend>
+                            <label>Ужасно
+                                <input type="radio" name="quality" value="theworst">
+                            </label>
+                            <label>Плохо
+                                <input type="radio" name="quality" value="bad">
+                            </label>
+                            <label>Нормально
+                                <input type="radio" name="quality" value="normal">
+                            </label>
+                            <label>Хорошо
+                                <input type="radio" name="quality" value="good">
+                            </label>
+                            <label>Отлично
+                                <input type="radio" name="quality" value="thebest">
+                            </label>
+                        </fieldset>
+                        <p>
+                            <label>Ваше мнение о товаре
+                                <textarea name="feedbacktext"></textarea>
+                            </label>
+                        </p>
+                        <p>
+                            <button id="submitbut">Отправить отзыв</button>
+                        </p>
+                    </form>
+                </div>
+            </section>
+            <aside class="col_sidebar">
+                <div class="container-form">
+                    <form type="get" action="">
+                        <input type="text" id="serchform" name="search" placeholder="Поиск">
+                        <button id="submitsbut">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="categorycontainer">
+                    <ul class="category">
+                        <li><a href="Buklet.html">Буклеты</a></li>
+                        <li><a href="Flaer.html">Флаеры</a></li>
+                        <li><a href="Vizitka.html">Визитки</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+    </main>
+    <footer id="footer-site">
+        <ul class="soc">
+            <li><a href="" class="fa fa-vk"></a></li>
+            <li><a href="" class="fa fa-facebook"></a></li>
+            <li><a href="" class="fa fa-mail-forward"></a></li>
+        </ul>
+        <div>
+            <span>&copy; Давид Каролинсий 2020</span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+.infotext p {
+    margin-left: 2em;
+    font-family: Garuda;
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 2.556rem;
+    margin-bottom: 2rem;
+}
+
+.infotext{
+    box-sizing:border-box;
+    margin-top: 7rem;
+    position: relative;
+    border-bottom: 1px solid #d34d43;
+    border-right: 1px solid #d34d43;
+    background-image: url(files/images/bukl.jpg);
+    background-size:65%;
+    background-position-x: right;
+    background-position-y: 15%;
+    background-repeat:no-repeat;
+}
+
+.infotext h1{
+    font-family:Garuda;
+    margin-left:7%;
+}
+
+#formcontainer{
+    margin-top:5%;
+    margin-left:5%;
+    margin-bottom:5%;
+    display:flex;
+    align-items:center;
+    align-content:center;
+    border-right:1px solid #d34d43;
+}
+
+.container-form input{
+    margin-left:0;
+}
+
+#submitbut{
+    color:#d34d43;
+    background:#e8dbd3;
+    border:none;
+    height:40px;
+    width:340px;
+    border-radius:20px;
+}
+
+#usrimg{
+    width:0.1px;
+    height:0.1px;
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    z-index:-1;
+}
+
+#usrimg + label{
+    font-size:1.25em;
+    font-weight:700;
+    color:white;
+    background-color:black;
+    display:inline-block;
+}
+
+#usrimg:focus + label, #usrimg + label:hover{
+    background-color:red;
+}
+
+#uploadimg{
+    color:#d34d43;
+}
+
+@media screen and (max-width:800px){
+    .infotext{
+        margin-top:3rem;
+        margin-bottom:1rem;
+        background-size:80%;
+        background-position-y:5%;
+    }
+
+    .infotext p{
+        font-size:1rem;
+        margin-bottom:1rem;
+        margin-left:1rem;
+    }
+
+    .infotext h1{
+        font-size:1.5rem;
+    }
+
+    #formcontainer{
+        margin-top:1.5%;
+        margin-left:1.5%;
+        margin-bottom:1.5%;
+    }
+
+    #formcontainer input{
+        width:40%;
+    }
+
+    select{
+        width:35%;
+        font-size:12px;
+    }
+
+    #submitbut{
+        width:80%;
+    }
+}

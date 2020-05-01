@@ -1,0 +1,147 @@
+#feedbackform{
+    font-family:Garuda;
+    display:block;
+    padding:40px;
+    margin:auto;
+}
+
+h1{
+    margin-left:1em;
+    font-family:Garuda;
+}
+
+main{
+    background:#d34d43;
+    padding:1%;
+}
+
+textarea{
+    width:80%;
+    height:20em;
+}
+
+fieldset{
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+fieldset input{
+    margin-left:0px;
+    margin-right:20px;
+}
+
+#submitbut{
+    color:#d34d43;
+    background:#e8dbd3;
+    border:none;
+    height:40px;
+    width:340px;
+    border-radius:20px;
+}
+
+input{
+    margin-top:20px;
+    margin-left:20px;
+}
+
+#formcontainer{
+    display:flex;
+    align-items:center;
+    align-content:center;
+    border-right:1px solid #d34d43;
+}
+
+.container-form input{
+    margin-left:0;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #e145a3;
+    border-bottom: 4px solid #e145a3;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+    left: 5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #e145a3;
+}
+
+#feedbacktext{
+    box-sizing:border-box;
+    margin-top: 7rem;
+    position: relative;
+    border-bottom: 1px solid #d34d43;
+    background-image: url(files/images/khuy.jpg);
+    background-size:25%;
+    background-position-x: 30%;
+    background-position-y: 15%;
+    background-repeat:no-repeat;
+}
+
+#feedbacktext p{
+    margin-left:2em;
+    font-family:Garuda;
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 2.556rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:800px){
+    fieldset{
+        width:75%;
+    }
+    fieldset input{
+        margin-right:10px;
+    }
+
+    #feedbacktext{
+        margin-top:3rem;
+        background-size:80%;
+        background-position-x: 85%;
+        background-position-y: 20%;
+    }
+
+    #feedbacktext p{
+        margin-left:1em;
+        font-size:1rem;
+        margin-bottom:1rem;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    #submitbut{
+        width:80%;
+    }
+
+}
+
